@@ -15,6 +15,7 @@ const Dashboard = () => {
   useEffect(() => {
 
     const config = {
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
       Authorization: user.token.token,
     };

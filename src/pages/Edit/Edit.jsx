@@ -22,6 +22,7 @@ const Edit = () => {
     const url = 'https://biagio-login-app.herokuapp.com/users/edit';
 
     const config = {
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         Authorization: storage.token.token,
     };

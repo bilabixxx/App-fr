@@ -9,6 +9,7 @@ const LogoutButton = () => {
   const logout = async (e) => {
     e.preventDefault();
     const config = {
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
       Authorization: user.token.token,
     }

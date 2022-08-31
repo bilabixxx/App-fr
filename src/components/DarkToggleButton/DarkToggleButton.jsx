@@ -8,6 +8,7 @@ const DarkToogleButton = () => {
     const [themeColor, setThemeColor] = useState(user.themeColor);
     const url = 'https://biagio-login-app.herokuapp.com/users/theme';
     const config = {
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         Authorization: user.token.token,
     };
