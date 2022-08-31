@@ -25,7 +25,7 @@ const Dashboard = () => {
       headers: config,
       params: body,
       method: 'GET',
-      url: '/users/dashboard',
+      url: 'https://biagio-login-app.herokuapp.com/users/dashboard',
 
     })
       .then((res) => setData(res.data.data))

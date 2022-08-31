@@ -13,7 +13,7 @@ const SignIn = () => {
     const [error, setError] = useState(true);
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
     const navigate = useNavigate();
-    let url = "/users/login";
+    let url = "https://biagio-login-app.herokuapp.com/users/login";
 
 
     useEffect(() => {

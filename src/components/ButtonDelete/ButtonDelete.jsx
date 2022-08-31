@@ -15,7 +15,7 @@ const ButtonDelete = () => {
             headers: config,
             params: { _id: storage._id },
             method: 'DELETE',
-            url: '/users/delete',
+            url: 'https://biagio-login-app.herokuapp.com/users/delete',
         })
         .then(() => {
             alert('User successfully deleted!');

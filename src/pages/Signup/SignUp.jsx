@@ -13,8 +13,8 @@ const SignUp = () => {
     const [errorName, setErrorName] = useState(false);
     const [errorPassword, setErrorPassword] = useState(false);
     const [error, setError] = useState(false);
-    const urlSignUp = '/users/register';
-    const urlLogin = '/users/login'
+    const urlSignUp = 'https://biagio-login-app.herokuapp.com/users/register';
+    const urlLogin = 'https://biagio-login-app.herokuapp.com/users/login'
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
     const navigate = useNavigate();
 

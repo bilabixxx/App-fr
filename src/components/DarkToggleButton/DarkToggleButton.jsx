@@ -6,7 +6,7 @@ import './DarkToggleButton.css'
 const DarkToogleButton = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
     const [themeColor, setThemeColor] = useState(user.themeColor);
-    const url = '/users/theme';
+    const url = 'https://biagio-login-app.herokuapp.com/users/theme';
     const config = {
         'Content-Type': 'application/json',
         Authorization: user.token.token,

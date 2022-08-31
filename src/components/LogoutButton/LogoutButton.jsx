@@ -15,7 +15,7 @@ const LogoutButton = () => {
     await axios.request({
       headers: config,
       method: 'POST',
-      url: '/users/logout',
+      url: 'https://biagio-login-app.herokuapp.com/users/logout',
 
     })
       .then(() => {

@@ -19,7 +19,7 @@ const Edit = () => {
     const [errorOldPassword, setErrorOldPassword] = useState(false);
     const [comparePassword, setComparePassword] = useState(false)
     const [error, setError] = useState(false);
-    const url = '/users/edit';
+    const url = 'https://biagio-login-app.herokuapp.com/users/edit';
 
     const config = {
         'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ const Edit = () => {
         const oldPasswordIsChecked = await axios({
             headers: config,
             method: 'GET',
-            url: '/users/user',
+            url: 'https://biagio-login-app.herokuapp.com/users/user',
             params: {
                 _id: storage._id,
                 password: oldPassword
