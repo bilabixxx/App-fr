@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const ButtonDelete = () => {
     const storage = JSON.parse(localStorage.getItem('user'));
     const config = {
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         Authorization: storage.token.token,
     };
